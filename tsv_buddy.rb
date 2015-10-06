@@ -19,7 +19,7 @@ module TsvBuddy
       #value.map!(&:chomp)
       tsv_hash = {}
       key_arr.each_index { |index| tsv_hash[key_arr[index]] = value[index] }
-      hash_stored.push(tsv_hash)
+      hash_stored << tsv_hash
       @data = hash_stored
       # key/value pair matching, set it equal to @data, the data structure
     end
